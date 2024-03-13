@@ -1,0 +1,138 @@
+*{padding: 0%;
+    margin: 0%;}
+
+    body{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+
+    .background{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+    video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .background::after{
+        content: '';
+        width: inherit;
+        height: inherit;
+        inset: 0;
+        position: fixed;
+        background: linear-gradient( 109deg, rgba(10, 12, 16, 0.99)15%,
+                                            rgba( 10 , 12, 16, 0.7)50%,
+                                            rgba(10, 12, 16, 0.99)85%);
+    
+                                    
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        column-gap: 64px;
+        width: 100%;
+        max-width: 1200px;
+        padding-top: 24px;
+    }
+
+    header img{
+        width: 70px;
+        height: auto;
+    }
+
+    .lista{
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+        list-style: none;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    li{color: aliceblue;}
+    
+    li:hover{color: rgb(71, 29, 102);}
+
+    #loguinho{
+        transition: transform 1s;
+    }
+    
+    #loguinho:hover{
+        transform: rotate(35deg);
+    }
+
+    .rede{
+        width: 35px;
+        opacity: 0.6;
+        transition: all 0.4s;
+    }
+
+    .rede:hover{
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    .social{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+    }
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        height: 100vh;
+    }
+
+    .logo{
+        width: 350px;
+    }
+
+    p{
+        color: aliceblue;
+        font-size: 10px;
+        margin: 20px 0 28px;
+        padding-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .info{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .jujutsu{
+       width: 1216px;
+       height: 580px;
+    }
+    .texto{
+        font-size: larger;
+    }
