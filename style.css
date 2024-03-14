@@ -69,11 +69,11 @@
     
     li:hover{color: rgb(71, 29, 102);}
 
-    #loguinho{
+    .loguinho{
         transition: transform 1s;
     }
     
-    #loguinho:hover{
+    .loguinho:hover{
         transform: rotate(35deg);
     }
 
@@ -81,6 +81,7 @@
         width: 35px;
         opacity: 0.6;
         transition: all 0.4s;
+        filter: invert(100%);
     }
 
     .rede:hover{
@@ -130,9 +131,13 @@
     }
 
     .jujutsu{
-       width: 1216px;
-       height: 580px;
+       width: 600px;
+       height: 800px;
     }
     .texto{
         font-size: larger;
     }
+    .botao{padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: none;}
